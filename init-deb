@@ -31,4 +31,4 @@ echo
 bold "Installing rkhunter"
 apt install -y rkhunter
 echo
-echo "Done! Go to config directory. You need some configuration changes there"
+echo "Done. You need some configuration changes there - https://github.com/ryhkml/basic-securing-linux-server/tree/main/config/deb"

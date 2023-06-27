@@ -1,12 +1,12 @@
-### LOCAL
+## LOCAL
 
-#### Generating public and private ed25519 key pair
+### Generating public and private ed25519 key pair
 
 ```bash
 ssh-keygen -t ed25519
 ```
 
-#### Copy public key to remote server
+### Copy public key to remote server
 
 ```bash
 ssh-copy-id <USER>@<REMOTE_SERVER>
@@ -14,9 +14,9 @@ ssh-copy-id <USER>@<REMOTE_SERVER>
 
 <hr>
 
-### REMOTE SERVER
+## REMOTE SERVER
 
-#### Make a backup of sshd defaults config
+### Make a backup of sshd defaults config
 
 ```bash
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config-BACKUP

@@ -1,4 +1,4 @@
-#### Make a backup of crowdsec defaults config
+### Make a backup of crowdsec defaults config
 
 ```bash
 sudo cp /etc/crowdsec/config.yaml /etc/crowdsec/config-BACKUP.yaml
@@ -17,7 +17,7 @@ db_config:
 ...
 ```
 
-#### Edit Ban Duration (optional)
+### Edit Ban Duration (optional)
 
 file config in `/etc/crowdsec/profiles.yaml`
 

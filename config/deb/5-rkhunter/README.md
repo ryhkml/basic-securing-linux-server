@@ -1,4 +1,4 @@
-#### Make a backup of rkhunter defaults config
+### Make a backup of rkhunter defaults config
 
 ```bash
 sudo cp -p /etc/default/rkhunter /etc/default/rkhunter-BACKUP
