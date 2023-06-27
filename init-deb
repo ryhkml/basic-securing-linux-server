@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -e
+
+function bold {
+    echo -e "\033[1m$1\033[0m"
+}
+
+# Unattended Upgrades
+bold "Installing unattended-upgrades"
+apt install -y unattended-upgrades
+
+# UFW
+echo
+bold "Installing UFW"
+apt install -y ufw
+
+# Crowdsec
+echo
+bold "Installing crowdsec"
+curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
+apt install -y crowdsec crowdsec-firewall-bouncer-iptables
+
+# NTP Client
+echo
+bold "Installing ntp"
+apt install -y ntp
+
+# Rkhunter
+echo
+bold "Installing rkhunter"
+apt install -y rkhunter
+echo
+echo "Done! Go to config directory. You need some configuration changes there"
