@@ -24,7 +24,7 @@ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config-BACKUP
 
 then, edit sshd config in `/etc/ssh/sshd_config`
 
-```html
+```text
 Include /etc/ssh/sshd_config.d/*.conf
 
 Port 22
